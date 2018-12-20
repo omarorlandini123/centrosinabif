@@ -21,10 +21,10 @@ class HomeController extends Controller
        
 
         if($user = Auth::user()){
-            return "vaLidado";
+            return redirect('/Acogido');
         }
 
-        return "sin validar";
+        return redirect('/login');
       
     }
 }

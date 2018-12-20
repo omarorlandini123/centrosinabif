@@ -1,5 +1,5 @@
-@extends('principal.index')
-@section('contenido')
+@extends('layouts.app')
+@section('content')
 
 <div class="col-sm-12 align-self-center">
   <div class="card text-white bg-danger">

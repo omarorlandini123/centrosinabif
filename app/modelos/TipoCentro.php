@@ -10,4 +10,9 @@ class TipoCentro extends Model
     protected $table = 'tipo_centro';
     protected $primaryKey = "tipo_centro_id";
     public $sequence = 'tipo_centro_seq';
+
+    public function modulo(){
+        return $this->hasMany('App\modelos\Modulo','tipo_centro_id','tipo_centro_id'); 
+    }
+
 }

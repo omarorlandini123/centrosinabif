@@ -37,4 +37,8 @@ class User extends Authenticatable
     public function nombre_completo(){
         return $this->usuario_apellido_pa ." ".$this->usuario_apellido_ma .", ".$this->usuario_nombre;
     }
+
+    public function usuario_centro_atencion(){
+        return $this->hasMany('App\modelos\UsuarioCentroAtencion','usuario_id','usuario_id');
+    }
 }
